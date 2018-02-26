@@ -1,0 +1,50 @@
+/****************************************/
+/* Приклад коду властивостей для header */
+/****************************************/
+
+/* Для закоментованих властивостей можна */
+/* вказати власні значення та зняти коментар */
+
+
+header .row {
+    height: 100vh;  /* Приклад! Висота header завжди рівна висоті екрану пристрою */
+    justify-content: center;  /* Контейнери всередині header .row центруються по основній осі (горизонтально) */
+    align-items: center;  /* Контейнер всередині header .row центрується по поперечній осі (вертикально) */
+}
+
+.cl {
+    clear: both;
+}
+
+@media screen and (max-width:768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    #txt {
+    padding-top: 30%;
+    }
+}
+
+
+.slide1 {
+    background: url("../img/bg1.jpg") left center;
+}
+.slide2 {
+    background: url("../img/bg2.jpg") center center;
+}
+.slide3 {
+    background: url("../img/bg3.jpg") center center;
+}
+.slide1, .slide2, .slide3 {
+    background-size: cover;
+    height: 768px;
+}
+
+/* Приклад зміни відступів зверху, знизу для секцій на Small екранах */
+
+
+@media screen and (max-width: 850px) and (orientation : landscape){
+    #head .row {
+       min-height: 250vh;
+    }
+}

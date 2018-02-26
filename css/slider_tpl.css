@@ -1,0 +1,35 @@
+.slider-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 200px;
+    text-align: center;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: #2f031f;
+    max-width: 48px;
+    max-height: 48px;
+    top: 50%;
+    margin-top:-24px;
+}
+
+.carousel-control-prev {
+    border-radius: 0 50% 50% 0;
+}
+
+.carousel-control-next {
+    border-radius: 50% 0 0 50%;
+}
+
+/* Для екранів шириною менше 767px */
+/* мінімальна висота слайдера      */
+/* рівну висоті viewport 100vh     */
+
+@media screen and (max-width:767px) {
+    .slide1 {
+        background-position: -200px center;
+    }
+}
